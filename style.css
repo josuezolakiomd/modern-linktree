@@ -42,15 +42,17 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: auto;
-  background-color: #16181d;
+  height: 100vh;
+  /* background-color: #16181d; */
   padding: 15px;
 }
 
 header {
   width: 100%;
-  height: auto;
+  height: 500px;
   background-color: #0d1117;
   padding: 25px 20px;
   border-radius: 0.25rem;
@@ -105,7 +107,7 @@ header {
   height: 130px;
   border-radius: 50%;
   overflow: hidden;
-  background-image: url("./profile-photo.jpg");
+  background-image: url("./images/profile-photo-2.JPG");
   background-size: cover;
   border: 3px solid #222;
 }
@@ -131,6 +133,10 @@ header p {
   font-weight: 500;
 }
 
+main {
+  flex: 1;
+}
+
 main,
 footer {
   margin-top: 12px;
@@ -148,6 +154,10 @@ h4 {
   margin-top: 10px;
   margin-bottom: 30px;
   font-size: 1.04rem;
+}
+
+.show-date {
+  font-size: 1.4rem;
 }
 
 ul,
@@ -239,6 +249,11 @@ ul span {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.15rem;
+  height: 100px;
   text-align: center;
   letter-spacing: 0.034rem;
   color: #777;
