@@ -266,8 +266,22 @@ ul span {
 }
 
 .email-container {
-  width: 900px;
+  display: flex;
+  /* width: 900px; */
 }
+
+.youtube-video-container {
+  justify-self: center;
+  width: 795px;
+  height: 450px;
+  margin-bottom: 80px;
+  border-radius: 0.25rem !important;
+  border: 3px solid;
+  /* border-image: linear-gradient(to right, #16181dc2, #16181dc2); */
+  border-image: linear-gradient(to right, #fbfcfd27, #fbfcfd2a);
+  border-image-slice: 1;
+}
+
 
 footer {
   display: flex;
@@ -279,6 +293,7 @@ footer {
   letter-spacing: 0.034rem;
   color: #777;
 }
+
 
 @media screen and (max-width: 1300px) {
   .about-me,
@@ -306,3 +321,16 @@ footer {
     width: 100%;
   }
 }
+
+/* Testing Variables */
+
+.green {
+  background-color: #6ee7b7;
+}
+
+/* ------------ Notes -----------------
+
+for small devices, the video must be width: 304px;
+  height: 171px;
+
+*/
