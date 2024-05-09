@@ -289,6 +289,36 @@ ul span {
   border-image-slice: 1;
 }
 
+.fixed-bottom-right {
+  position: fixed;
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to bottom right, #6ee7b7, #16181d);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  bottom: 60px;
+  right: 80px;
+  font-size: 1.12rem;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.feature-modal {
+  position: fixed;
+  width: 400px;
+  height: 550px;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 400px;
+  right: 50px;
+  z-index: 999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #16181d;
+  transition: ease-in-out 200ms;
+}
 
 footer {
   display: flex;
@@ -305,6 +335,11 @@ footer {
 @media screen and (max-width: 1300px) {
   .about-me,
   .flag {
+    display: none;
+  }
+
+  .fixed-bottom-right,
+  .feature-modal {
     display: none;
   }
 }
@@ -328,6 +363,6 @@ footer {
 
 /* Testing Variables */
 
-.green {
-  background-color: #6ee7b7;
+.bg-gray {
+  background-color: #535554;
 }
