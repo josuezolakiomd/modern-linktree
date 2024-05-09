@@ -1,4 +1,5 @@
 const showDate = document.querySelector(".show-date");
+const modal = document.querySelector(".feature-modal");
 
 const getCurrentYear = () => {
   const currentYear = new Date().getFullYear();
@@ -6,10 +7,7 @@ const getCurrentYear = () => {
   showDate.textContent = result;
 };
 
-
-
 const showAndHideModal = () => {
-  const modal = document.querySelector(".feature-modal");
   const flex = modal.style.display;
 
   if(flex === "flex") {
