@@ -42,11 +42,10 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   width: 100%;
   height: auto;
-  background-color: #16181d;
   padding: 20px;
 }
 
@@ -175,7 +174,7 @@ h4 {
 }
 
 .show-date {
-  font-size: 1.35rem;
+  font-size: 1.33rem;
 }
 
 ul,
@@ -183,8 +182,9 @@ li {
   list-style: none;
 }
 
-ul {
+.social-media-links {
   width: 900px;
+  padding: 0 40px;
 }
 
 li a {
@@ -255,29 +255,37 @@ ul span {
   color: #fafafa;
 }
 
-.email-text {
+.section-title {
   margin-top: 50px;
   margin-bottom: 25px;
   font-weight: 600;
-  font-size: 1.14rem;
-  color: #999;
+  letter-spacing: 0.1rem;
+  font-size: 1.15rem;
+  color: #f2f2f2;
+  /* color: #999; */
   padding-bottom: 10px;
-  border-bottom: 3px solid #333;
+  border-bottom: 3px solid #3333335d;
 }
 
-.email-container {
-  display: flex;
-  /* width: 900px; */
-}
-
-.youtube-video-container {
-  justify-self: center;
+.video-container {
   width: 795px;
+}
+
+.video-title {
+  font-size: 1.33rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 25px;
+  color: #777;
+  text-align: center;
+}
+
+.youtube-video {
+  justify-self: center;
+  width: 100%;
   height: 450px;
   margin-bottom: 80px;
   border-radius: 0.25rem !important;
   border: 3px solid;
-  /* border-image: linear-gradient(to right, #16181dc2, #16181dc2); */
   border-image: linear-gradient(to right, #fbfcfd27, #fbfcfd2a);
   border-image-slice: 1;
 }
@@ -296,15 +304,16 @@ footer {
 
 
 @media screen and (max-width: 1300px) {
-  .about-me,
-  .flag {
+  .about-me {
     display: none;
   }
 }
 
 @media screen and (max-width: 900px) {
-  ul {
+
+  .social-media-links {
     width: 100%;
+    padding: 0;
   }
 
   li a:hover {
@@ -315,11 +324,6 @@ footer {
     color: #eee;
     transform: scale(1);
   }
-
-  .email-container {
-    background-color: #333;
-    width: 100%;
-  }
 }
 
 /* Testing Variables */
@@ -327,10 +331,3 @@ footer {
 .green {
   background-color: #6ee7b7;
 }
-
-/* ------------ Notes -----------------
-
-for small devices, the video must be width: 304px;
-  height: 171px;
-
-*/

@@ -19,5 +19,15 @@ Solutions:
 2-
 3-
 
+------------------- Implementations ------------------------
+
+1- Create a fixed bottom-right button that says "Check the new features out"
+  1.1 - Must be in a fixed position for all the screen size
+  1.2 - Once cliked must pop up a modal box with all the new features listed
+
+2- Implement a download button for my PDF-CV so that people can download it
+
+
+
 --- Thank you!
 ----- Josue Zolakio.
