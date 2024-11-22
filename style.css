@@ -73,9 +73,9 @@ header {
 }
 
 .about-me {
-  text-align: justify;
+  text-align: center;
   width: 250px;
-  height: 230px;
+  height: 250px;
   padding: 20px;
   border-radius: 0.25rem;
   position: absolute;
@@ -90,14 +90,19 @@ header {
   font-size: 1.04rem;
   line-height: 1.45rem;
   letter-spacing: 0.05rem;
-  cursor: zoom-in;
+  cursor: default;
+}
+
+.about-me span {
+  color: #975c03;
+  cursor: pointer;
 }
 
 .about-me:hover {
   transition: ease-in-out 200ms;
   border-right: 2px dashed #382b00;
   border-bottom: 2px dashed #382b00;
-  transform: scale(1.14);
+  transform: scale(1.30);
 }
 
 .about-me-vs {
@@ -148,19 +153,30 @@ header p {
   text-align: center;
   margin-bottom: 25px;
   font-weight: 500;
+  width: 400px;
 }
 
 main {
   flex: 1;
 }
 
-main,
-footer {
+main {
   margin-top: 12px;
   width: 100%;
   background-color: #0d1117;
   border-radius: 0.25rem;
   padding: 20px;
+}
+
+.footer {
+  background-color: #0d1117;
+  width: 100%;
+  height: inherit;
+  padding: 20px;
+}
+
+footer {
+  margin: 0px 20px 20px 20px;
 }
 
 h4 {
@@ -215,7 +231,7 @@ li a:hover {
 }
 
 .social-text {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   letter-spacing: 0.035rem;
 }
 
@@ -232,20 +248,22 @@ ul span {
   margin-bottom: 20px;
 }
 
-.fa-brands {
+.fa-brands, .icon-style {
   font-size: 2.8rem;
   padding: 10px;
   color: #eee;
 }
 
-.fa-brands:hover {
+.fa-brands:hover,
+.icon-style:hover {
   transition: ease-in-out 150ms;
   color: #975c03;
-  transform: scale(1.24);
+  transform: scale(1.70);
   cursor: grab;
 }
 
-.fa-brands:not(:last-child) {
+.fa-brands:not(:last-child),
+.icon-style:not(:last-child) {
   margin-right: 20px;
 }
 
@@ -345,6 +363,10 @@ footer {
 }
 
 @media screen and (max-width: 960px) {
+
+  header p {
+    width: 300px;
+  }
 
   .social-media-links {
     width: 100%;
